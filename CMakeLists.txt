@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 #this change avoid the warning that appear when we include raylib using Cmake fatch content 
+
+set(BUILD_EXAMPLES OFF CACHE BOOL "Build raylib examples" FORCE) 
 project(raylib)
 
 # Avoid excessive expansion of variables in conditionals. In particular, if
